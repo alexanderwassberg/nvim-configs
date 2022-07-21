@@ -29,6 +29,6 @@ lua << EOF
   require("toggleterm").setup()
   require('lualine').setup()
   require('telescope').setup{
-    defaults = { file_ignore_patterns = {"node_modules"} }
+    defaults = { file_ignore_patterns = {"node_modules"} } "" Ignores dir node_modules
   }
 EOF
