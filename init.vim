@@ -2,6 +2,7 @@
 runtime plugs.vim
 runtime maps.vim
 
+" General
 colorscheme nordfox
 scriptencoding utf-8
 let g:loaded_matchparen=1
@@ -29,6 +30,6 @@ lua << EOF
   require("toggleterm").setup()
   require('lualine').setup()
   require('telescope').setup{
-    defaults = { file_ignore_patterns = {"node_modules"} } "" Ignores dir node_modules
+    defaults = { file_ignore_patterns = {"node_modules"} } 
   }
 EOF
