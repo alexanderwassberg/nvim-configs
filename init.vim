@@ -1,7 +1,7 @@
 " Includes
-runtime plugs.vim
+runtime ./plugin/plugs.vim
+runtime ./plugins/configs.vim
 runtime maps.vim
-runtime configs.vim
 
 " General
 colorscheme nordfox
