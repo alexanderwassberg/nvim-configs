@@ -6,11 +6,12 @@ call plug#begin()
   Plug 'kyazdani42/nvim-web-devicons'
   Plug 'kyazdani42/nvim-tree.lua'
 
+  " LSP
+  Plug 'neovim/nvim-lspconfig'
+
   " Syntax (Autocompl. etc)
-  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'pangloss/vim-javascript'
-  Plug 'mxw/vim-jsx'
-  
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}   
+
   " Appearance
   Plug 'EdenEast/nightfox.nvim'
   Plug 'tribela/vim-transparent'
@@ -26,9 +27,5 @@ call plug#begin()
   
   " Terminal
   Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
-
-  " LSP
-  Plug 'neovim/nvim-lspconfig'
-  Plug 'williamboman/nvim-lsp-installer'
 
 call plug#end()
