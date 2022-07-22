@@ -1,6 +1,7 @@
 " Includes
 runtime plugs.vim
 runtime maps.vim
+runtime configs.vim
 
 " General
 colorscheme nordfox
@@ -23,14 +24,3 @@ set cursorline
 set cursorlineopt=number
 highlight Visual cterm=NONE ctermbg=236 ctermfg=NONE guibg=Grey40
 highlight LineNr cterm=none ctermfg=240 guifg=#2b506e guibg=#000000
-
-lua << EOF
-  require("nvim-tree").setup()
-  require('gitsigns').setup()
-  require("toggleterm").setup()
-  require('lualine').setup()
-  require('telescope').setup{
-    defaults = { file_ignore_patterns = {"node_modules"} } 
-  }
-  require("nvim-lsp-installer").setup {}
-EOF
