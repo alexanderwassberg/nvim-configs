@@ -1,6 +1,6 @@
 " Includes
-runtime ./plugin/plugs.vim
 runtime ./plugins/configs.vim
+runtime ./plugin/plugs.vim
 runtime maps.vim
 
 " General

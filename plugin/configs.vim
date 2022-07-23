@@ -1,6 +1,6 @@
 lua << EOF
   require'nvim-treesitter.configs'.setup {
-    highlight = { enable = true, },
+    highlight = { enable = true },
     incremental_selection = {
       enable = true,
       keymaps = {
@@ -10,12 +10,11 @@ lua << EOF
         node_decremental = "grm",
       },
     },
+    autotag = { enable = true },
   } 
   require('nvim-tree').setup()
   require('gitsigns').setup()
   require('toggleterm').setup()
   require('lualine').setup()
-  require('telescope').setup{
-    defaults = { file_ignore_patterns = {"node_modules"} }
-  }
+  require('telescope').setup{ defaults = { file_ignore_patterns = {"node_modules"} } }
 EOF
