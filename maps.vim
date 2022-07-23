@@ -2,8 +2,8 @@
 let mapleader = "\<Space>"
 
 " General Document Shorties
-nnoremap <leader>w :w<CR> " Save changes
-nnoremap <leader>ww :wq<CR> " Save changes & Quit
+nnoremap <leader>w :w!<CR> " Save changes
+nnoremap <leader>wq :wq<CR> " Save changes & Quit
 nnoremap <leader>q :q<CR> " Quit 
 nnoremap <leader>qq :qa!<CR> " Quit all
 tnoremap <Esc> <C-\><C-n> " Escapes terminal in vim
